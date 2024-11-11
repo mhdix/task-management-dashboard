@@ -1,14 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import AppNav from './AppNav';
-import Footer from './Footer';
+import AppFooter from './AppFooter';
 
 const Layout = () => {
   return (
     <div>
       <AppNav />
       <Outlet />
-      <Footer />
+      <AppFooter />
     </div>
   );
 }
