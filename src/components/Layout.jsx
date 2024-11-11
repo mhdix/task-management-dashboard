@@ -6,9 +6,9 @@ import AppFooter from './AppFooter';
 const Layout = () => {
   return (
     <div>
-      {/* <AppNav /> */}
+      <AppNav />
       <Outlet />
-      {/* <AppFooter /> */}
+      <AppFooter />
     </div>
   );
 }
