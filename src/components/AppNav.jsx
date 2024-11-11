@@ -1,20 +1,29 @@
 import React from 'react'
+import { Link, NavLink } from "react-router-dom";
 
 const AppNav = () => {
   return (
-    <div className="">
-      <ul className="flex justify-around">
-        <div className="flex gap-10">
-          <li>خانه</li>
-          <li>پروفایل</li>
+    <div className={`py-8 border shadow-lg text-end`}>
+      <ul className="hidden md:grid md:grid-cols-3 place-items-center">
+        <div className="gap-10 hidden md:flex">
+          <NavLink to="todo">
+            کارهایی <br className="hidden md:block lg:hidden" />
+            که باید بکنم
+          </NavLink>
+          <NavLink to="completed">
+            کارهایی <br className="hidden md:block lg:hidden" />
+            که تکمیل کردم
+          </NavLink>
         </div>
-        <div className="flex gap-10">
-          <li>کارهایی که باید بکنم</li>
-          <li>کارهایی که تکمیل کردم</li>
+        <Link to="/">Perfect Code</Link>
+        <a className="rotate-90 md:hidden">|||</a>
+        <div className="gap-10 hidden md:flex">
+          <NavLink to="profile">پروفایل</NavLink>
+          <NavLink to="/">خانه</NavLink>
         </div>
       </ul>
     </div>
   );
-}
+};
 
 export default AppNav

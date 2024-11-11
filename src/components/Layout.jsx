@@ -5,7 +5,7 @@ import AppFooter from './AppFooter';
 
 const Layout = () => {
   return (
-    <div>
+    <div className='font-vazir' >
       <AppNav />
       <Outlet />
       <AppFooter />
